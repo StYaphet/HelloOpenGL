@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PDDViewController : UIViewController
+@import GLKit;
+
+@interface PDDViewController : GLKViewController
 
 @end

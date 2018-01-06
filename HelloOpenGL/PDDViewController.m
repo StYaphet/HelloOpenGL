@@ -8,6 +8,8 @@
 
 #import "PDDViewController.h"
 
+@import GLKit;
+
 @interface PDDViewController ()
 
 @end
@@ -16,22 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	GLKView *view = (GLKView *)self.view;
+	view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
+	glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
+	glClear(GL_COLOR_BUFFER_BIT);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

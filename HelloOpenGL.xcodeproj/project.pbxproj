@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6E0D119920013BA6008018F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D119820013BA6008018F5 /* AppDelegate.m */; };
-		6E0D119C20013BA6008018F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D119B20013BA6008018F5 /* ViewController.m */; };
 		6E0D119F20013BA6008018F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0D119D20013BA6008018F5 /* Main.storyboard */; };
 		6E0D11A120013BA6008018F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0D11A020013BA6008018F5 /* Assets.xcassets */; };
 		6E0D11A420013BA6008018F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0D11A220013BA6008018F5 /* LaunchScreen.storyboard */; };
 		6E0D11A720013BA6008018F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11A620013BA6008018F5 /* main.m */; };
 		6E0D11B120013BA6008018F5 /* HelloOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11B020013BA6008018F5 /* HelloOpenGLTests.m */; };
 		6E0D11BC20013BA6008018F5 /* HelloOpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11BB20013BA6008018F5 /* HelloOpenGLUITests.m */; };
+		6E0D11CB20013CCF008018F5 /* PDDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11CA20013CCF008018F5 /* PDDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		6E0D119420013BA5008018F5 /* HelloOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0D119720013BA6008018F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E0D119820013BA6008018F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E0D119A20013BA6008018F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E0D119B20013BA6008018F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6E0D119E20013BA6008018F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E0D11A020013BA6008018F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E0D11A320013BA6008018F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		6E0D11B720013BA6008018F5 /* HelloOpenGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloOpenGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0D11BB20013BA6008018F5 /* HelloOpenGLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloOpenGLUITests.m; sourceTree = "<group>"; };
 		6E0D11BD20013BA6008018F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0D11C920013CCF008018F5 /* PDDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDViewController.h; sourceTree = "<group>"; };
+		6E0D11CA20013CCF008018F5 /* PDDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +103,13 @@
 			children = (
 				6E0D119720013BA6008018F5 /* AppDelegate.h */,
 				6E0D119820013BA6008018F5 /* AppDelegate.m */,
-				6E0D119A20013BA6008018F5 /* ViewController.h */,
-				6E0D119B20013BA6008018F5 /* ViewController.m */,
 				6E0D119D20013BA6008018F5 /* Main.storyboard */,
 				6E0D11A020013BA6008018F5 /* Assets.xcassets */,
 				6E0D11A220013BA6008018F5 /* LaunchScreen.storyboard */,
 				6E0D11A520013BA6008018F5 /* Info.plist */,
 				6E0D11A620013BA6008018F5 /* main.m */,
+				6E0D11C920013CCF008018F5 /* PDDViewController.h */,
+				6E0D11CA20013CCF008018F5 /* PDDViewController.m */,
 			);
 			path = HelloOpenGL;
 			sourceTree = "<group>";
@@ -194,6 +194,7 @@
 		6E0D118C20013BA5008018F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PDD;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "郝一鹏";
 				TargetAttributes = {
@@ -265,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E0D119C20013BA6008018F5 /* ViewController.m in Sources */,
 				6E0D11A720013BA6008018F5 /* main.m in Sources */,
 				6E0D119920013BA6008018F5 /* AppDelegate.m in Sources */,
+				6E0D11CB20013CCF008018F5 /* PDDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
