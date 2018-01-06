@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PDDViewController.h
 //  HelloOpenGL
 //
 //  Created by 郝一鹏 on 2018/1/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PDDViewController : UIViewController
 
 @end
-
