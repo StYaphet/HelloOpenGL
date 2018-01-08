@@ -15,6 +15,9 @@
 		6E0D11B120013BA6008018F5 /* HelloOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11B020013BA6008018F5 /* HelloOpenGLTests.m */; };
 		6E0D11BC20013BA6008018F5 /* HelloOpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11BB20013BA6008018F5 /* HelloOpenGLUITests.m */; };
 		6E0D11CB20013CCF008018F5 /* PDDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11CA20013CCF008018F5 /* PDDViewController.m */; };
+		6E950CE620028ED3006C7888 /* RWTBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E950CE120028ED3006C7888 /* RWTBaseEffect.m */; };
+		6E950CE720028ED3006C7888 /* RWTSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */; };
+		6E950CE820028ED3006C7888 /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6E950CE520028ED3006C7888 /* RWTSimpleFragment.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		6E0D11BD20013BA6008018F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0D11C920013CCF008018F5 /* PDDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDViewController.h; sourceTree = "<group>"; };
 		6E0D11CA20013CCF008018F5 /* PDDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDViewController.m; sourceTree = "<group>"; };
+		6E950CE120028ED3006C7888 /* RWTBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTBaseEffect.m; sourceTree = "<group>"; };
+		6E950CE220028ED3006C7888 /* RWTVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTVertex.h; sourceTree = "<group>"; };
+		6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleVertex.glsl; sourceTree = "<group>"; };
+		6E950CE420028ED3006C7888 /* RWTBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTBaseEffect.h; sourceTree = "<group>"; };
+		6E950CE520028ED3006C7888 /* RWTSimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleFragment.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		6E0D119620013BA6008018F5 /* HelloOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				6E950CE020028ED3006C7888 /* Demo Resources */,
 				6E0D119720013BA6008018F5 /* AppDelegate.h */,
 				6E0D119820013BA6008018F5 /* AppDelegate.m */,
 				6E0D119D20013BA6008018F5 /* Main.storyboard */,
@@ -130,6 +139,18 @@
 				6E0D11BD20013BA6008018F5 /* Info.plist */,
 			);
 			path = HelloOpenGLUITests;
+			sourceTree = "<group>";
+		};
+		6E950CE020028ED3006C7888 /* Demo Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E950CE420028ED3006C7888 /* RWTBaseEffect.h */,
+				6E950CE120028ED3006C7888 /* RWTBaseEffect.m */,
+				6E950CE220028ED3006C7888 /* RWTVertex.h */,
+				6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */,
+				6E950CE520028ED3006C7888 /* RWTSimpleFragment.glsl */,
+			);
+			path = "Demo Resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0D11A420013BA6008018F5 /* LaunchScreen.storyboard in Resources */,
+				6E950CE720028ED3006C7888 /* RWTSimpleVertex.glsl in Resources */,
+				6E950CE820028ED3006C7888 /* RWTSimpleFragment.glsl in Resources */,
 				6E0D11A120013BA6008018F5 /* Assets.xcassets in Resources */,
 				6E0D119F20013BA6008018F5 /* Main.storyboard in Resources */,
 			);
@@ -269,6 +292,7 @@
 				6E0D11A720013BA6008018F5 /* main.m in Sources */,
 				6E0D119920013BA6008018F5 /* AppDelegate.m in Sources */,
 				6E0D11CB20013CCF008018F5 /* PDDViewController.m in Sources */,
+				6E950CE620028ED3006C7888 /* RWTBaseEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
