@@ -55,6 +55,7 @@
   glAttachShader(_programHandle, fragmentShaderName);
   
   glBindAttribLocation(_programHandle, RWTVertexAttribPosition, "a_Position");
+  glBindAttribLocation(_programHandle, RWTVertexAttribColor, "a_Color");
   
   glLinkProgram(_programHandle);
   

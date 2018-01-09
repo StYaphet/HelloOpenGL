@@ -25,10 +25,10 @@
 
 - (void)setupVertexBuffer {
     const static RWTVertex vertices[] = {
-		{1, -1, 0},
-		{1, 1, 0},
-		{-1, 1, 0},
-		{-1, -1, 0}
+		{{1, -1, 0}, {1, 0, 0 ,1}},
+		{{1, 1, 0}, {0, 1, 0, 1}},
+		{{-1, 1, 0}, {0, 0, 1, 0}},
+		{{-1, -1, 0}, {0, 0, 0, 0}}
     };
 	
 	const static GLubyte indices[] = {
@@ -64,11 +64,13 @@
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
 	glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT);   
     [_shader prepareToDraw];
     
     glEnableVertexAttribArray(RWTVertexAttribPosition);
     glVertexAttribPointer(RWTVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(RWTVertex), (const GLvoid *)offsetof(RWTVertex, Position));
+	glEnableVertexAttribArray(RWTVertexAttribColor);
+	glVertexAttribPointer(RWTVertexAttribColor, 4, GL_FLOAT, GL_FALSE, sizeof(RWTVertex), (const GLvoid *)offsetof(RWTVertex, Color));
 	
 	glBindBuffer(GL_ARRAY_BUFFER, _vertextBuffer);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _indexBuffer);
@@ -76,6 +78,7 @@
 	glDrawElements(GL_TRIANGLES, _indexCount, GL_UNSIGNED_BYTE, 0);
 	
     glDisable(RWTVertexAttribPosition);
+	glDisable(RWTVertexAttribColor);
 }
 
 @end

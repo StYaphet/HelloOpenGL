@@ -1,3 +1,5 @@
+varying lowp vec4 frag_color;
+
 void main(void) {
-  gl_FragColor = vec4(1, 1, 1, 1);
+  gl_FragColor = frag_color;
 }
