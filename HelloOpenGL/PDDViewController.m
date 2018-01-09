@@ -18,19 +18,33 @@
 
 @implementation PDDViewController {
     GLuint _vertextBuffer;
+	GLuint _indexBuffer;
     RWTBaseEffect *_shader;
+	GLsizei _indexCount;
 }
 
 - (void)setupVertexBuffer {
     const static RWTVertex vertices[] = {
-        {-1.0, -1.0, 0},
-        { 1.0, -1.0, 0},
-        {   0,    0, 0},
+		{1, -1, 0},
+		{1, 1, 0},
+		{-1, 1, 0},
+		{-1, -1, 0}
     };
-    
+	
+	const static GLubyte indices[] = {
+		0, 1, 2,
+		2, 3, 0
+	};
+	
+	_indexCount = sizeof(indices) / sizeof(indices[0]);
+	
     glGenBuffers(1, &_vertextBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertextBuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+	
+	glGenBuffers(1, &_indexBuffer);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _indexBuffer);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 }
 
 - (void)setupShader {
@@ -55,10 +69,12 @@
     
     glEnableVertexAttribArray(RWTVertexAttribPosition);
     glVertexAttribPointer(RWTVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(RWTVertex), (const GLvoid *)offsetof(RWTVertex, Position));
-    
-    glBindBuffer(GL_ARRAY_BUFFER, _vertextBuffer);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
-    
+	
+	glBindBuffer(GL_ARRAY_BUFFER, _vertextBuffer);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _indexBuffer);
+//    glDrawArrays(GL_TRIANGLES, 0, 3);
+	glDrawElements(GL_TRIANGLES, _indexCount, GL_UNSIGNED_BYTE, 0);
+	
     glDisable(RWTVertexAttribPosition);
 }
 
