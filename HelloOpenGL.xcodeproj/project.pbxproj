@@ -18,6 +18,7 @@
 		6E950CE620028ED3006C7888 /* RWTBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E950CE120028ED3006C7888 /* RWTBaseEffect.m */; };
 		6E950CE720028ED3006C7888 /* RWTSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */; };
 		6E950CE820028ED3006C7888 /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6E950CE520028ED3006C7888 /* RWTSimpleFragment.glsl */; };
+		6EB7EF06200669D500BC4121 /* RWTRainbow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7EF04200669D500BC4121 /* RWTRainbow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleVertex.glsl; sourceTree = "<group>"; };
 		6E950CE420028ED3006C7888 /* RWTBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTBaseEffect.h; sourceTree = "<group>"; };
 		6E950CE520028ED3006C7888 /* RWTSimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleFragment.glsl; sourceTree = "<group>"; };
+		6EB7EF04200669D500BC4121 /* RWTRainbow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTRainbow.m; sourceTree = "<group>"; };
+		6EB7EF05200669D500BC4121 /* RWTRainbow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTRainbow.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +112,8 @@
 		6E0D119620013BA6008018F5 /* HelloOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				6E950CE020028ED3006C7888 /* Demo Resources */,
+				6EB7EF03200669D500BC4121 /* Challenge Resources lesson3 */,
+				6E950CE020028ED3006C7888 /* Demo Resources lesson2 */,
 				6E0D119720013BA6008018F5 /* AppDelegate.h */,
 				6E0D119820013BA6008018F5 /* AppDelegate.m */,
 				6E0D119D20013BA6008018F5 /* Main.storyboard */,
@@ -141,7 +145,7 @@
 			path = HelloOpenGLUITests;
 			sourceTree = "<group>";
 		};
-		6E950CE020028ED3006C7888 /* Demo Resources */ = {
+		6E950CE020028ED3006C7888 /* Demo Resources lesson2 */ = {
 			isa = PBXGroup;
 			children = (
 				6E950CE420028ED3006C7888 /* RWTBaseEffect.h */,
@@ -150,7 +154,16 @@
 				6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */,
 				6E950CE520028ED3006C7888 /* RWTSimpleFragment.glsl */,
 			);
-			path = "Demo Resources";
+			path = "Demo Resources lesson2";
+			sourceTree = "<group>";
+		};
+		6EB7EF03200669D500BC4121 /* Challenge Resources lesson3 */ = {
+			isa = PBXGroup;
+			children = (
+				6EB7EF04200669D500BC4121 /* RWTRainbow.m */,
+				6EB7EF05200669D500BC4121 /* RWTRainbow.h */,
+			);
+			path = "Challenge Resources lesson3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 				6E0D119920013BA6008018F5 /* AppDelegate.m in Sources */,
 				6E0D11CB20013CCF008018F5 /* PDDViewController.m in Sources */,
 				6E950CE620028ED3006C7888 /* RWTBaseEffect.m in Sources */,
+				6EB7EF06200669D500BC4121 /* RWTRainbow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
