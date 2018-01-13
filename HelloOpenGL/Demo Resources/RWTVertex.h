@@ -1,3 +1,5 @@
+@import GLKit;
+
 typedef enum {
   RWTVertexAttribPosition = 0,
   RWTVertexAttribColor
