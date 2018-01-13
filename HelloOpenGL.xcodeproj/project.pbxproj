@@ -15,6 +15,7 @@
 		6E0D11B120013BA6008018F5 /* HelloOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11B020013BA6008018F5 /* HelloOpenGLTests.m */; };
 		6E0D11BC20013BA6008018F5 /* HelloOpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11BB20013BA6008018F5 /* HelloOpenGLUITests.m */; };
 		6E0D11CB20013CCF008018F5 /* PDDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D11CA20013CCF008018F5 /* PDDViewController.m */; };
+		6E3B9F52200A63730095C07D /* PDDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B9F51200A63730095C07D /* PDDModel.m */; };
 		6E950CE620028ED3006C7888 /* RWTBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E950CE120028ED3006C7888 /* RWTBaseEffect.m */; };
 		6E950CE720028ED3006C7888 /* RWTSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */; };
 		6E950CE820028ED3006C7888 /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6E950CE520028ED3006C7888 /* RWTSimpleFragment.glsl */; };
@@ -54,6 +55,8 @@
 		6E0D11BD20013BA6008018F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0D11C920013CCF008018F5 /* PDDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDViewController.h; sourceTree = "<group>"; };
 		6E0D11CA20013CCF008018F5 /* PDDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDViewController.m; sourceTree = "<group>"; };
+		6E3B9F50200A63730095C07D /* PDDModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDModel.h; sourceTree = "<group>"; };
+		6E3B9F51200A63730095C07D /* PDDModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDDModel.m; sourceTree = "<group>"; };
 		6E950CE120028ED3006C7888 /* RWTBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTBaseEffect.m; sourceTree = "<group>"; };
 		6E950CE220028ED3006C7888 /* RWTVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTVertex.h; sourceTree = "<group>"; };
 		6E950CE320028ED3006C7888 /* RWTSimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleVertex.glsl; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				6E0D11A620013BA6008018F5 /* main.m */,
 				6E0D11C920013CCF008018F5 /* PDDViewController.h */,
 				6E0D11CA20013CCF008018F5 /* PDDViewController.m */,
+				6E3B9F50200A63730095C07D /* PDDModel.h */,
+				6E3B9F51200A63730095C07D /* PDDModel.m */,
 			);
 			path = HelloOpenGL;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0D11A720013BA6008018F5 /* main.m in Sources */,
+				6E3B9F52200A63730095C07D /* PDDModel.m in Sources */,
 				6E0D119920013BA6008018F5 /* AppDelegate.m in Sources */,
 				6E0D11CB20013CCF008018F5 /* PDDViewController.m in Sources */,
 				6E950CE620028ED3006C7888 /* RWTBaseEffect.m in Sources */,
